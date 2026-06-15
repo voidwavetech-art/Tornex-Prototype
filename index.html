@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TORNEX | تورنيكس للأنظمة غير المأهولة</title>
+  <meta name="description" content="تورنيكس - شركة مصرية رائدة في تصميم وتطوير وتصنيع أنظمة الطائرات بدون طيار (UAVs) والحلول الجوية الدفاعية المتقدمة. طائرات جبار، فولتكس، وأنظمة الشحن المسير.">
+  <meta name="keywords" content="تورنيكس, Tornex, درونز, طائرات بدون طيار, UAV, دفاع, مصر, EDEX, جبار, فولتكس">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 RTL -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+
+  <!-- Font Awesome & AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <div class="preloader-ring"></div>
+      <div class="preloader-ring"></div>
+      <span class="preloader-text font-tech">TORNEX</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="main-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <img src="./images/073f8488-7f32-4fea-9745-4f3b767fcf1a.jfif" alt="Tornex Logo" class="brand-logo">
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="القائمة">
+        <i class="fa-solid fa-bars text-white fs-2"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+          <li class="nav-item"><a class="nav-link" href="#capabilities">القدرات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">الأنظمة والدرونز</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stats">الإنجازات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-cyber ms-3 d-none d-lg-block">اطلب عرضاً توضيحياً</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section d-flex align-items-center">
+    <div class="hero-bg"></div>
+    <!-- Animated particles -->
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="container position-relative z-index-2 text-center text-lg-start mt-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
+          <span class="badge cyber-badge mb-3"><i class="fa-solid fa-satellite-dish me-2"></i> تكنولوجيا مصرية بمعايير عالمية</span>
+          <h1 class="display-3 fw-bold text-white mb-4 hero-title">
+            مستقبل الأنظمة <br> <span class="text-gradient">غير المأهولة</span>
+          </h1>
+          <p class="lead text-light-gray mb-5 pe-lg-5 fs-5">
+            نطور في <span class="text-white fw-bold">TORNEX</span> طائرات بدون طيار (UAVs) وحلولاً تكتيكية واستراتيجية متطورة لدعم قطاعات الأمن، الدفاع، والمراقبة الجوية بدقة متناهية. من عائلة <span class="text-cyber-blue fw-bold">جبار</span> إلى منظومات <span class="text-cyber-blue fw-bold">فولتكس</span>، نحن نقود مستقبل الصناعة الدفاعية المصرية.
+          </p>
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
+            <a href="#products" class="btn btn-cyber btn-lg px-5 py-3">
+              <i class="fa-solid fa-jet-fighter-up me-2"></i>اكتشف أنظمتنا
+            </a>
+            <a href="#about" class="btn btn-outline-cyber btn-lg px-5 py-3">
+              <i class="fa-solid fa-circle-info me-2"></i>تعرف علينا
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1200">
+          <div class="hero-drone-showcase">
+            <img src="./images/jabbar-250.jfif" alt="Jabbar 250 Drone" class="hero-drone-img">
+            <div class="drone-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+      <span>اكتشف المزيد</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-darker section-padding">
+    <div class="container py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+          <span class="section-badge"><i class="fa-solid fa-building-columns me-2"></i>من نحن</span>
+          <h2 class="text-white fw-bold display-5 mb-4">
+            صناعة مصرية <span class="text-gradient">100%</span>
+          </h2>
+          <p class="text-light-gray fs-5 mb-4 leading-relaxed">
+            <strong class="text-white">تورنيكس (TORNEX)</strong> هي شركة مصرية خاصة رائدة في تصميم وتطوير وتصنيع أنظمة الطائرات بدون طيار والحلول الجوية المتقدمة، وهي جزء من مجموعة <strong class="text-white">أمستون الدولية (Amstone International Group)</strong>. تأسست عام 2018 برؤية طموحة لتوطين التكنولوجيا الدفاعية المتقدمة داخل مصر.
+          </p>
+          <p class="text-light-gray mb-4 leading-relaxed">
+            نفخر بأن جميع أنظمتنا مصممة ومصنعة بالكامل محلياً — من هياكل ألياف الكربون والفايبر جلاس، إلى المحركات والأنظمة الإلكترونية المتقدمة — مما يجعلنا في طليعة حركة الاكتفاء الذاتي الدفاعي لمصر.
+          </p>
+          <div class="row g-3 mt-4">
+            <div class="col-6">
+              <div class="about-feature">
+                <i class="fa-solid fa-microchip text-cyber-blue"></i>
+                <h6 class="text-white mt-2 mb-1">تقنيات محلية</h6>
+                <small class="text-light-gray">تطوير كامل داخل مصر</small>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-feature">
+                <i class="fa-solid fa-award text-cyber-blue"></i>
+                <h6 class="text-white mt-2 mb-1">معايير عالمية</h6>
+                <small class="text-light-gray">جودة بمواصفات دولية</small>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-feature">
+                <i class="fa-solid fa-helmet-safety text-cyber-blue"></i>
+                <h6 class="text-white mt-2 mb-1">فريق متخصص</h6>
+                <small class="text-light-gray">مهندسون مصريون خبراء</small>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-feature">
+                <i class="fa-solid fa-earth-africa text-cyber-blue"></i>
+                <h6 class="text-white mt-2 mb-1">آفاق التصدير</h6>
+                <small class="text-light-gray">حلول للسوق العالمي</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800">
+          <div class="about-visual">
+            <div class="about-img-wrapper">
+              <img src="./images/hero-bg.png" alt="Tornex Operations" class="about-main-img">
+              <div class="about-overlay"></div>
+            </div>
+            <div class="floating-card" data-aos="fade-up" data-aos-delay="400">
+              <i class="fa-solid fa-flag fa-2x text-cyber-blue mb-2"></i>
+              <h5 class="text-white mb-1 font-tech">EDEX 2025</h5>
+              <small class="text-light-gray">المشارك الرسمي في معرض مصر الدولي للدفاع</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities Section -->
+  <section id="capabilities" class="py-5 section-padding">
+    <div class="container py-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="fa-solid fa-gear me-2"></i>قدراتنا</span>
+        <h2 class="text-white fw-bold display-5 mt-3">تقنيات <span class="text-gradient">متفوقة</span></h2>
+        <p class="text-light-gray mx-auto" style="max-width: 600px;">حلول شاملة تغطي كافة مراحل العمليات من الاستطلاع حتى الضربات الدقيقة</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="capability-card glass-card p-5 h-100">
+            <div class="capability-icon">
+              <i class="fa-solid fa-crosshairs fa-2x"></i>
+            </div>
+            <h4 class="text-white fw-bold mt-4">دقة استهداف عالية</h4>
+            <p class="text-light-gray small mb-0">أنظمة توجيه متطورة تعمل بالذكاء الاصطناعي مع تقنية GPS + التوجيه البصري لضمان إصابة الأهداف بدقة متناهية في بيئات الحرب الإلكترونية.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="capability-card glass-card p-5 h-100">
+            <div class="capability-icon">
+              <i class="fa-solid fa-shield-halved fa-2x"></i>
+            </div>
+            <h4 class="text-white fw-bold mt-4">اتصالات مشفرة</h4>
+            <p class="text-light-gray small mb-0">نقل حي للبيانات والفيديو عبر قنوات اتصال مؤمنة ومشفرة بالكامل ضد محاولات التشويش والاختراق مع بروتوكولات أمان عسكرية.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="capability-card glass-card p-5 h-100">
+            <div class="capability-icon">
+              <i class="fa-solid fa-bolt fa-2x"></i>
+            </div>
+            <h4 class="text-white fw-bold mt-4">قدرة تحمل فائقة</h4>
+            <p class="text-light-gray small mb-0">هياكل مصنوعة من ألياف الكربون والفايبر جلاس خفيفة الوزن توفر ساعات طيران طويلة تصل إلى 14 ساعة في أصعب الظروف الجوية.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="capability-card glass-card p-5 h-100">
+            <div class="capability-icon">
+              <i class="fa-solid fa-satellite fa-2x"></i>
+            </div>
+            <h4 class="text-white fw-bold mt-4">استطلاع ومراقبة ISR</h4>
+            <p class="text-light-gray small mb-0">منصات متخصصة لمهام المراقبة والاستطلاع وجمع المعلومات الاستخباراتية مع كاميرات EO/IR عالية الدقة تعمل نهاراً وليلاً.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="capability-card glass-card p-5 h-100">
+            <div class="capability-icon">
+              <i class="fa-solid fa-plane-up fa-2x"></i>
+            </div>
+            <h4 class="text-white fw-bold mt-4">إقلاع عمودي VTOL</h4>
+            <p class="text-light-gray small mb-0">تقنية هجينة تجمع بين الإقلاع والهبوط العمودي وكفاءة الأجنحة الثابتة لتشغيل مرن بدون مدارج في أي تضاريس.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="capability-card glass-card p-5 h-100">
+            <div class="capability-icon">
+              <i class="fa-solid fa-truck-fast fa-2x"></i>
+            </div>
+            <h4 class="text-white fw-bold mt-4">نقل لوجستي مسير</h4>
+            <p class="text-light-gray small mb-0">طائرات شحن بدون طيار مخصصة لنقل الإمدادات والدعم اللوجستي في التضاريس الصعبة والمناطق المعزولة بكفاءة عالية.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products / Drones Showcase -->
+  <section id="products" class="py-5 bg-darker section-padding">
+    <div class="container py-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="fa-solid fa-jet-fighter me-2"></i>أنظمتنا</span>
+        <h2 class="text-white fw-bold display-5 mt-3">منظومات <span class="text-gradient">الطيران المسير</span></h2>
+        <p class="text-light-gray">أحدث ما توصلت إليه تكنولوجيا TORNEX للردع والمراقبة — كما عُرضت في EDEX 2025</p>
+      </div>
+
+      <!-- Product Filter Tabs -->
+      <div class="product-filter text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="jabbar">عائلة جبار</button>
+        <button class="filter-btn" data-filter="voltex">منظومة فولتكس</button>
+        <button class="filter-btn" data-filter="support">الدعم اللوجستي</button>
+      </div>
+
+      <div class="row g-4" id="products-grid">
+
+        <!-- Jabbar 250 -->
+        <div class="col-lg-4 col-md-6 product-item" data-category="jabbar" data-aos="fade-up" data-aos-delay="100">
+          <div class="drone-card glass-card border-0 overflow-hidden h-100">
+            <div class="drone-img-wrapper">
+              <img src="./images/jabbar-250.jfif" class="img-fluid" alt="جبار 250">
+              <div class="tech-overlay"></div>
+              <div class="drone-status font-tech">
+                <span class="status-dot status-active"></span> OPERATIONAL
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="badge bg-danger text-white mb-2 font-tech">JABBAR 250</span>
+              <h4 class="text-white fw-bold mb-2">جبار 250 — هدف جوي / ذخيرة متسكعة</h4>
+              <p class="text-light-gray small mb-3">طائرة مسيرة عالية السرعة تعمل بمحرك توربيني، مصممة لمحاكاة التهديدات الجوية وتدريب منظومات الدفاع الجوي.</p>
+              <ul class="list-unstyled text-light-gray small mb-4 tech-specs">
+                <li><i class="fa-solid fa-gauge-high text-cyber-blue w-20px"></i> السرعة: 576 كم/س</li>
+                <li><i class="fa-solid fa-route text-cyber-blue w-20px"></i> المدى: 1,500 كم</li>
+                <li><i class="fa-solid fa-clock text-cyber-blue w-20px"></i> التحليق: 2.5 ساعة</li>
+                <li><i class="fa-solid fa-weight-hanging text-cyber-blue w-20px"></i> الوزن: 250 كجم | حمولة: 50 كجم</li>
+                <li><i class="fa-solid fa-ruler text-cyber-blue w-20px"></i> الأبعاد: 2.34م × جناح 3.45م</li>
+              </ul>
+              <button class="btn btn-outline-cyber w-100" onclick="openSpecModal('jabbar250')">
+                <i class="fa-solid fa-file-lines me-2"></i>المواصفات الكاملة
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jabbar 200 -->
+        <div class="col-lg-4 col-md-6 product-item" data-category="jabbar" data-aos="fade-up" data-aos-delay="200">
+          <div class="drone-card glass-card border-0 overflow-hidden h-100">
+            <div class="drone-img-wrapper">
+              <img src="./images/jabbar-200.jpg" class="img-fluid" alt="جبار 200">
+              <div class="tech-overlay"></div>
+              <div class="drone-status font-tech">
+                <span class="status-dot status-active"></span> OPERATIONAL
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="badge bg-warning text-dark mb-2 font-tech">JABBAR 200</span>
+              <h4 class="text-white fw-bold mb-2">جبار 200 — ذخيرة متسكعة بعيدة المدى</h4>
+              <p class="text-light-gray small mb-3">ذخيرة متسكعة طويلة المدى مصممة للبقاء في الجو لفترات طويلة وتوجيه ضربات دقيقة لمسافات بعيدة.</p>
+              <ul class="list-unstyled text-light-gray small mb-4 tech-specs">
+                <li><i class="fa-solid fa-clock text-cyber-blue w-20px"></i> التحليق: حتى 14 ساعة</li>
+                <li><i class="fa-solid fa-crosshairs text-cyber-blue w-20px"></i> التوجيه: GPS + بصري + INS</li>
+                <li><i class="fa-solid fa-bomb text-cyber-blue w-20px"></i> الرأس الحربي: متعدد الأغراض</li>
+                <li><i class="fa-solid fa-radar text-cyber-blue w-20px"></i> بصمة رادارية منخفضة</li>
+              </ul>
+              <button class="btn btn-outline-cyber w-100" onclick="openSpecModal('jabbar200')">
+                <i class="fa-solid fa-file-lines me-2"></i>المواصفات الكاملة
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jabbar 150 -->
+        <div class="col-lg-4 col-md-6 product-item" data-category="jabbar" data-aos="fade-up" data-aos-delay="300">
+          <div class="drone-card glass-card border-0 overflow-hidden h-100">
+            <div class="drone-img-wrapper">
+              <img src="./images/jabbar-150.jfif" class="img-fluid" alt="جبار 150">
+              <div class="tech-overlay"></div>
+              <div class="drone-status font-tech">
+                <span class="status-dot status-active"></span> OPERATIONAL
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="badge bg-danger text-white mb-2 font-tech">JABBAR 150</span>
+              <h4 class="text-white fw-bold mb-2">جبار 150 — ذخيرة هجومية أحادية الاتجاه</h4>
+              <p class="text-light-gray small mb-3">طائرة هجومية أحادية الاتجاه بتصميم جناح دلتا مقصوص، مصممة للاستخدام الفوري ضد أهداف محددة.</p>
+              <ul class="list-unstyled text-light-gray small mb-4 tech-specs">
+                <li><i class="fa-solid fa-shapes text-cyber-blue w-20px"></i> التصميم: جناح دلتا مقصوص</li>
+                <li><i class="fa-solid fa-weight-hanging text-cyber-blue w-20px"></i> الوزن: 150 كجم</li>
+                <li><i class="fa-solid fa-crosshairs text-cyber-blue w-20px"></i> التوجيه: GPS + بصري</li>
+                <li><i class="fa-solid fa-bomb text-cyber-blue w-20px"></i> رأس حربي مضاد للدروع</li>
+              </ul>
+              <button class="btn btn-outline-cyber w-100" onclick="openSpecModal('jabbar150')">
+                <i class="fa-solid fa-file-lines me-2"></i>المواصفات الكاملة
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- VOLTEX-5 -->
+        <div class="col-lg-4 col-md-6 product-item" data-category="voltex" data-aos="fade-up" data-aos-delay="100">
+          <div class="drone-card glass-card border-0 overflow-hidden h-100">
+            <div class="drone-img-wrapper">
+              <img src="./images/voltex-5.jfif" class="img-fluid" alt="فولتكس-5">
+              <div class="tech-overlay"></div>
+              <div class="drone-status font-tech">
+                <span class="status-dot status-active"></span> OPERATIONAL
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="badge bg-cyber-blue text-dark mb-2 font-tech">VOLTEX-5</span>
+              <h4 class="text-white fw-bold mb-2">فولتكس-5 — ذخيرة تكتيكية خفيفة</h4>
+              <p class="text-light-gray small mb-3">ذخيرة متسكعة تكتيكية خفيفة الوزن شبيهة بنظام Switchblade، قابلة للإطلاق من أنبوب فردي أو مركبة.</p>
+              <ul class="list-unstyled text-light-gray small mb-4 tech-specs">
+                <li><i class="fa-solid fa-gauge-high text-cyber-blue w-20px"></i> السرعة: 180 كم/س</li>
+                <li><i class="fa-solid fa-clock text-cyber-blue w-20px"></i> التحليق: 60 دقيقة</li>
+                <li><i class="fa-solid fa-route text-cyber-blue w-20px"></i> المدى: 180 كم</li>
+                <li><i class="fa-solid fa-bomb text-cyber-blue w-20px"></i> الحمولة: 5 كجم HE</li>
+              </ul>
+              <button class="btn btn-outline-cyber w-100" onclick="openSpecModal('voltex5')">
+                <i class="fa-solid fa-file-lines me-2"></i>المواصفات الكاملة
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- VOLTEX-10 -->
+        <div class="col-lg-4 col-md-6 product-item" data-category="voltex" data-aos="fade-up" data-aos-delay="200">
+          <div class="drone-card glass-card border-0 overflow-hidden h-100">
+            <div class="drone-img-wrapper">
+              <img src="./images/voltex-10.jfif" class="img-fluid" alt="فولتكس-10">
+              <div class="tech-overlay"></div>
+              <div class="drone-status font-tech">
+                <span class="status-dot status-active"></span> OPERATIONAL
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="badge bg-cyber-blue text-dark mb-2 font-tech">VOLTEX-10</span>
+              <h4 class="text-white fw-bold mb-2">فولتكس-10 — ذخيرة عملياتية ممتدة</h4>
+              <p class="text-light-gray small mb-3">نسخة أكبر وأكثر قدرة مصممة للعمليات طويلة المدى والدعم الأرضي مع حمولة متفجرة مضاعفة.</p>
+              <ul class="list-unstyled text-light-gray small mb-4 tech-specs">
+                <li><i class="fa-solid fa-gauge-high text-cyber-blue w-20px"></i> السرعة: 200 كم/س</li>
+                <li><i class="fa-solid fa-clock text-cyber-blue w-20px"></i> التحليق: 120 دقيقة</li>
+                <li><i class="fa-solid fa-bomb text-cyber-blue w-20px"></i> الحمولة: 10 كجم HE</li>
+                <li><i class="fa-solid fa-expand text-cyber-blue w-20px"></i> الإطلاق: أنبوبي / مركبة</li>
+              </ul>
+              <button class="btn btn-outline-cyber w-100" onclick="openSpecModal('voltex10')">
+                <i class="fa-solid fa-file-lines me-2"></i>المواصفات الكاملة
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cargo UAV -->
+        <div class="col-lg-4 col-md-6 product-item" data-category="support" data-aos="fade-up" data-aos-delay="300">
+          <div class="drone-card glass-card border-0 overflow-hidden h-100">
+            <div class="drone-img-wrapper">
+              <img src="./images/G1-cargo.png" class="img-fluid" alt="طائرة الشحن المسير">
+              <div class="tech-overlay"></div>
+              <div class="drone-status font-tech">
+                <span class="status-dot status-active"></span> OPERATIONAL
+              </div>
+            </div>
+            <div class="p-4">
+              <span class="badge bg-success text-white mb-2 font-tech">TX-CARGO</span>
+              <h4 class="text-white fw-bold mb-2">طائرة الشحن المسير VTOL</h4>
+              <p class="text-light-gray small mb-3">طائرة شحن بدون طيار هجينة للعمليات اللوجستية ونقل الإمدادات، تجمع بين الإقلاع العمودي وكفاءة الأجنحة الثابتة.</p>
+              <ul class="list-unstyled text-light-gray small mb-4 tech-specs">
+                <li><i class="fa-solid fa-plane-up text-cyber-blue w-20px"></i> الإقلاع: VTOL هجين</li>
+                <li><i class="fa-solid fa-weight-hanging text-cyber-blue w-20px"></i> أقصى حمولة: 15 كجم</li>
+                <li><i class="fa-solid fa-mountain text-cyber-blue w-20px"></i> التضاريس: جميع الأنواع</li>
+                <li><i class="fa-solid fa-network-wired text-cyber-blue w-20px"></i> المهمة: نقل لوجستي</li>
+              </ul>
+              <button class="btn btn-outline-cyber w-100" onclick="openSpecModal('cargo')">
+                <i class="fa-solid fa-file-lines me-2"></i>المواصفات الكاملة
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats" class="py-5 stats-section section-padding">
+    <div class="container py-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="fa-solid fa-chart-line me-2"></i>إنجازاتنا</span>
+        <h2 class="text-white fw-bold display-5 mt-3">أرقام <span class="text-gradient">تتحدث</span></h2>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-card glass-card p-4">
+            <div class="stat-icon"><i class="fa-solid fa-jet-fighter-up"></i></div>
+            <h2 class="text-white fw-bold counter font-tech" data-target="6">0</h2>
+            <p class="text-cyber-blue mb-0">منظومة طيران مسير</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-card glass-card p-4">
+            <div class="stat-icon"><i class="fa-solid fa-users-gear"></i></div>
+            <h2 class="text-white fw-bold counter font-tech" data-target="50">0</h2>
+            <span class="stat-suffix text-white font-tech">+</span>
+            <p class="text-cyber-blue mb-0">مهندس وفني متخصص</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-card glass-card p-4">
+            <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+            <h2 class="text-white fw-bold counter font-tech" data-target="5000">0</h2>
+            <span class="stat-suffix text-white font-tech">+</span>
+            <p class="text-cyber-blue mb-0">ساعة طيران تجريبي</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-card glass-card p-4">
+            <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+            <h2 class="text-white fw-bold counter font-tech" data-target="3">0</h2>
+            <p class="text-cyber-blue mb-0">مشاركة في EDEX</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-darker section-padding">
+    <div class="container py-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-badge"><i class="fa-solid fa-paper-plane me-2"></i>تواصل</span>
+        <h2 class="text-white fw-bold display-5 mt-3">شريكك الاستراتيجي في <span class="text-gradient">معرض EDEX</span></h2>
+        <p class="text-light-gray mx-auto" style="max-width: 600px;">نفخر بكوننا جزءاً من منظومة الدفاع المصرية. لتنسيق اجتماع أو طلب عروض فنية، يرجى تعبئة النموذج أدناه.</p>
+      </div>
+
+      <div class="row align-items-stretch g-5">
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="contact-info-card glass-card p-5 h-100">
+            <h4 class="text-white fw-bold mb-4">معلومات التواصل</h4>
+
+            <div class="contact-item mb-4">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h6 class="text-white mb-1">المقر الرئيسي</h6>
+                <p class="text-light-gray small mb-0">City Stars F2, Corporate Towers 2<br>شارع مكرم عبيد، مدينة نصر، القاهرة، مصر</p>
+              </div>
+            </div>
+
+            <div class="contact-item mb-4">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <h6 class="text-white mb-1">البريد الإلكتروني</h6>
+                <p class="text-light-gray small mb-0"><a href="mailto:info@amstoneig.com" class="text-cyber-blue text-decoration-none">info@amstoneig.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item mb-4">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h6 class="text-white mb-1">هاتف</h6>
+                <p class="text-light-gray small mb-0 font-tech" dir="ltr"><a href="tel:+20224801663" class="text-cyber-blue text-decoration-none">+202 24801663</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item mb-4">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div>
+                <h6 class="text-white mb-1">الموقع الرسمي</h6>
+                <p class="text-light-gray small mb-0"><a href="https://amstoneig.com" target="_blank" class="text-cyber-blue text-decoration-none">amstoneig.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item mb-4">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-earth-americas"></i>
+              </div>
+              <div>
+                <h6 class="text-white mb-1">مكاتب دولية</h6>
+                <p class="text-light-gray small mb-0">مصر • الإمارات • المجر • جنوب أفريقيا • وسط أفريقيا</p>
+              </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <h6 class="text-white mb-3">تابعنا</h6>
+            <div class="d-flex gap-3">
+              <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-right">
+          <div class="glass-card p-5 h-100">
+            <form id="contact-form" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label text-light-gray small" for="contact-name">الاسم / الجهة <span class="text-danger">*</span></label>
+                  <input type="text" id="contact-name" name="name" class="form-control custom-input" placeholder="أدخل اسمك أو اسم الجهة" required>
+                  <div class="invalid-feedback">يرجى إدخال الاسم أو اسم الجهة</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-light-gray small" for="contact-email">البريد الإلكتروني <span class="text-danger">*</span></label>
+                  <input type="email" id="contact-email" name="email" class="form-control custom-input" placeholder="example@domain.com" required>
+                  <div class="invalid-feedback">يرجى إدخال بريد إلكتروني صحيح</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-light-gray small" for="contact-phone">رقم الهاتف</label>
+                  <input type="tel" id="contact-phone" name="phone" class="form-control custom-input" placeholder="+20 1XX XXX XXXX">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-light-gray small" for="contact-subject">الموضوع <span class="text-danger">*</span></label>
+                  <select id="contact-subject" name="subject" class="form-select custom-input" required>
+                    <option value="" selected disabled>اختر الموضوع</option>
+                    <option value="drone-systems">أنظمة الدرونز</option>
+                    <option value="cooperation">تعاون مشترك</option>
+                    <option value="exhibition">معرض EDEX</option>
+                    <option value="demo">طلب عرض توضيحي</option>
+                    <option value="other">أخرى</option>
+                  </select>
+                  <div class="invalid-feedback">يرجى اختيار الموضوع</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-light-gray small" for="contact-message">الرسالة <span class="text-danger">*</span></label>
+                  <textarea id="contact-message" name="message" class="form-control custom-input" rows="5" placeholder="اكتب رسالتك هنا... (أنظمة الدرونز، تعاون مشترك، إلخ)" required></textarea>
+                  <div class="invalid-feedback">يرجى كتابة رسالتك</div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" id="submit-btn" class="btn btn-cyber w-100 py-3 fw-bold btn-submit">
+                    <span class="btn-text"><i class="fa-solid fa-paper-plane me-2"></i>إرسال الرسالة</span>
+                    <span class="btn-loading d-none"><i class="fa-solid fa-spinner fa-spin me-2"></i>جاري الإرسال...</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <!-- Success message -->
+            <div id="form-success" class="text-center py-5 d-none">
+              <div class="success-animation">
+                <i class="fa-solid fa-circle-check fa-4x text-cyber-blue mb-3"></i>
+              </div>
+              <h4 class="text-white fw-bold">تم إرسال رسالتك بنجاح!</h4>
+              <p class="text-light-gray">سيتواصل معك فريقنا في أقرب وقت ممكن.</p>
+              <button class="btn btn-outline-cyber mt-3" onclick="resetForm()">إرسال رسالة أخرى</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 site-footer">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4">
+          <img src="./images/073f8488-7f32-4fea-9745-4f3b767fcf1a.jfif" alt="Tornex Logo" class="footer-logo mb-3">
+          <p class="text-light-gray small mb-3">شركة مصرية رائدة في تصميم وتطوير وتصنيع أنظمة الطائرات بدون طيار والحلول الجوية الدفاعية المتقدمة.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-btn social-btn-sm" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn social-btn-sm" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn social-btn-sm" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6 class="text-white fw-bold mb-3">روابط سريعة</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#capabilities">القدرات</a></li>
+            <li><a href="#products">الأنظمة</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6">
+          <h6 class="text-white fw-bold mb-3">المنتجات</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#products">عائلة جبار</a></li>
+            <li><a href="#products">منظومة فولتكس</a></li>
+            <li><a href="#products">طائرات الشحن</a></li>
+            <li><a href="#products">أنظمة ISR</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="text-white fw-bold mb-3">المقر</h6>
+          <p class="text-light-gray small mb-2"><i class="fa-solid fa-location-dot text-cyber-blue me-2"></i>City Stars, مدينة نصر، القاهرة</p>
+          <p class="text-light-gray small mb-2"><i class="fa-solid fa-envelope text-cyber-blue me-2"></i><a href="mailto:info@amstoneig.com" class="text-light-gray text-decoration-none">info@amstoneig.com</a></p>
+          <p class="text-light-gray small mb-2"><i class="fa-solid fa-phone text-cyber-blue me-2"></i><a href="tel:+20224801663" class="text-light-gray text-decoration-none" dir="ltr">+202 24801663</a></p>
+          <p class="text-light-gray small mb-0"><i class="fa-solid fa-globe text-cyber-blue me-2"></i><a href="https://amstoneig.com" target="_blank" class="text-light-gray text-decoration-none">amstoneig.com</a></p>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-3">
+        <p class="mb-0 small text-light-gray">© 2026 TORNEX للأنظمة غير المأهولة. جميع الحقوق محفوظة.</p>
+        <p class="mb-0 small text-cyber-blue">تصميم وتطوير: Yousef Ahmed Ghobashy</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top" aria-label="العودة للأعلى">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Spec Modal -->
+  <div class="modal fade" id="specModal" tabindex="-1" aria-labelledby="specModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content glass-modal">
+        <div class="modal-header border-0">
+          <h5 class="modal-title text-white fw-bold" id="specModalLabel"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+        </div>
+        <div class="modal-body" id="specModalBody">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
