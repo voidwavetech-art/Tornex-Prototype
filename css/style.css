@@ -6,28 +6,28 @@
 /* ===================== Variables ===================== */
 :root {
   --navy: #FFFFFF;
-  --navy-light: #F4F6F9;
-  --navy-mid: #E4E7EB;
-  --cyber-blue: #223D8C;
-  --cyber-blue-dark: #122252;
-  --cyber-blue-glow: rgba(34, 61, 140, 0.4);
-  --cyber-blue-subtle: rgba(34, 61, 140, 0.2);
-  --accent-red: #E63946;
-  --accent-gold: #FFB703;
-  --accent-green: #2EC4B6;
-  --silver: #E0E1DD;
-  --text-gray: #555555;
-  --text-light: #333333;
-  --glass-bg: rgba(255, 255, 255, 0.6);
-  --glass-bg-hover: rgba(255, 255, 255, 0.95);
-  --glass-border: rgba(34, 61, 140, 0.1);
-  --glass-border-hover: rgba(34, 61, 140, 0.4);
+  --navy-light: #F8FAFC;
+  --navy-mid: #E2E8F0;
+  --cyber-blue: #1D4ED8;
+  --cyber-blue-dark: #1E3A8A;
+  --cyber-blue-glow: rgba(29, 78, 216, 0.2);
+  --cyber-blue-subtle: rgba(29, 78, 216, 0.06);
+  --accent-red: #EF4444;
+  --accent-gold: #F59E0B;
+  --accent-green: #10B981;
+  --silver: #E2E8F0;
+  --text-gray: #475569;
+  --text-light: #0F172A;
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-bg-hover: rgba(255, 255, 255, 1);
+  --glass-border: rgba(15, 23, 42, 0.05);
+  --glass-border-hover: rgba(29, 78, 216, 0.3);
   --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.6);
-  --shadow-glow: 0 0 40px rgba(0, 180, 216, 0.25);
-  --radius: 20px;
-  --radius-sm: 10px;
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 20px 25px -5px rgba(29, 78, 216, 0.1);
+  --radius: 16px;
+  --radius-sm: 8px;
 }
 
 /* ===================== Reset & Base ===================== */
@@ -77,7 +77,7 @@ body {
 .z-index-2 { position: relative; z-index: 2; }
 
 .text-gradient {
-  background: linear-gradient(135deg, #7BA1FF 0%, #223D8C 50%, #122252 100%);
+  background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 50%, #1E3A8A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -286,7 +286,7 @@ body {
   border: 1px solid var(--glass-border);
   border-radius: var(--radius);
   transition: var(--transition);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
 }
 
 .glass-card:hover {
