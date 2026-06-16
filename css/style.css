@@ -18,16 +18,16 @@
   --silver: #E0E1DD;
   --text-gray: #8B95A2;
   --text-light: #B0BAC5;
-  --glass-bg: rgba(255, 255, 255, 0.025);
-  --glass-bg-hover: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.06);
-  --glass-border-hover: rgba(0, 180, 216, 0.3);
+  --glass-bg: rgba(10, 22, 40, 0.4);
+  --glass-bg-hover: rgba(10, 22, 40, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border-hover: rgba(0, 180, 216, 0.5);
   --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 30px rgba(0, 180, 216, 0.15);
-  --radius: 16px;
-  --radius-sm: 8px;
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 40px rgba(0, 180, 216, 0.25);
+  --radius: 20px;
+  --radius-sm: 10px;
 }
 
 /* ===================== Reset & Base ===================== */
@@ -281,11 +281,12 @@ body {
 /* ===================== Glass Cards ===================== */
 .glass-card {
   background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius);
   transition: var(--transition);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .glass-card:hover {
@@ -318,7 +319,7 @@ body {
 .hero-bg {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
-  background: url('../images/hero-bg.png') no-repeat center center/cover;
+  background: url('../image/hero.png') no-repeat center center/cover;
   z-index: 0;
 }
 
