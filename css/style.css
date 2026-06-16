@@ -5,9 +5,9 @@
 
 /* ===================== Variables ===================== */
 :root {
-  --navy: #050B14;
-  --navy-light: #0A1628;
-  --navy-mid: #0D1B2A;
+  --navy: #FFFFFF;
+  --navy-light: #F4F6F9;
+  --navy-mid: #E4E7EB;
   --cyber-blue: #223D8C;
   --cyber-blue-dark: #122252;
   --cyber-blue-glow: rgba(34, 61, 140, 0.4);
@@ -16,12 +16,12 @@
   --accent-gold: #FFB703;
   --accent-green: #2EC4B6;
   --silver: #E0E1DD;
-  --text-gray: #8B95A2;
-  --text-light: #B0BAC5;
-  --glass-bg: rgba(10, 22, 40, 0.4);
-  --glass-bg-hover: rgba(10, 22, 40, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-border-hover: rgba(0, 180, 216, 0.5);
+  --text-gray: #555555;
+  --text-light: #333333;
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-bg-hover: rgba(255, 255, 255, 0.95);
+  --glass-border: rgba(34, 61, 140, 0.1);
+  --glass-border-hover: rgba(34, 61, 140, 0.4);
   --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.6);
@@ -43,7 +43,7 @@ html {
 body {
   font-family: 'Cairo', sans-serif;
   background-color: var(--navy);
-  color: #fff;
+  color: #333;
   overflow-x: hidden;
   line-height: 1.7;
 }
@@ -161,7 +161,7 @@ body {
 
 /* ===================== Navbar ===================== */
 #main-navbar {
-  background: rgba(5, 11, 20, 0.6);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--glass-border);
@@ -172,8 +172,8 @@ body {
 
 #main-navbar.scrolled {
   padding: 8px 0;
-  background: rgba(5, 11, 20, 0.95);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 0 0 1px var(--cyber-blue-glow);
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), 0 0 1px var(--cyber-blue-glow);
 }
 
 .brand-logo {
@@ -327,15 +327,16 @@ body {
   content: '';
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
-  background: linear-gradient(135deg,
-    rgba(5, 11, 20, 0.95) 0%,
-    rgba(5, 11, 20, 0.85) 40%,
-    rgba(5, 11, 20, 0.7) 100%);
+  background: linear-gradient(90deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.7) 40%,
+    rgba(255, 255, 255, 0) 100%);
 }
 
 .hero-title {
   letter-spacing: -1px;
   line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.8);
 }
 
 .hero-particles {
@@ -845,6 +846,24 @@ body {
 .site-footer {
   background: linear-gradient(180deg, var(--navy-light) 0%, var(--navy) 100%);
   border-top: 1px solid var(--glass-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.site-footer::after {
+  content: '';
+  position: absolute;
+  top: -50px; left: -50px; width: 500px; height: 500px;
+  background: url('../image/Arrow.svg') no-repeat center center;
+  background-size: contain;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.site-footer .container {
+  position: relative;
+  z-index: 1;
 }
 
 .footer-logo {
