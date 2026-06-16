@@ -8,10 +8,10 @@
   --navy: #050B14;
   --navy-light: #0A1628;
   --navy-mid: #0D1B2A;
-  --cyber-blue: #00B4D8;
-  --cyber-blue-dark: #0096B4;
-  --cyber-blue-glow: rgba(0, 180, 216, 0.4);
-  --cyber-blue-subtle: rgba(0, 180, 216, 0.08);
+  --cyber-blue: #223D8C;
+  --cyber-blue-dark: #122252;
+  --cyber-blue-glow: rgba(34, 61, 140, 0.4);
+  --cyber-blue-subtle: rgba(34, 61, 140, 0.2);
   --accent-red: #E63946;
   --accent-gold: #FFB703;
   --accent-green: #2EC4B6;
@@ -77,7 +77,7 @@ body {
 .z-index-2 { position: relative; z-index: 2; }
 
 .text-gradient {
-  background: linear-gradient(135deg, #00B4D8 0%, #48CAE4 50%, #CAF0F8 100%);
+  background: linear-gradient(135deg, #7BA1FF 0%, #223D8C 50%, #122252 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -221,7 +221,7 @@ body {
 /* ===================== Buttons ===================== */
 .btn-cyber {
   background: linear-gradient(135deg, var(--cyber-blue) 0%, var(--cyber-blue-dark) 100%);
-  color: var(--navy);
+  color: #fff;
   border: none;
   border-radius: var(--radius-sm);
   font-weight: 700;
